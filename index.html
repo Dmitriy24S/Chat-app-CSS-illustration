@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chat app illustration</title>
+  </head>
+  <body>
+    <main>
+      <div class="bg-shape"></div>
+      <!-- phone illustration -->
+      <div class="illustration mx-auto rounded-3xl overflow-hidden">
+        <!-- phone top -->
+        <div class="app-top relative flex text-white gap-3 p-5 items-center text-left">
+          <button class="return">&#8249;</button>
+          <div class="user-profile overflow-hidden">
+            <img src="images/avatar.jpg" alt="user-profile" />
+          </div>
+          <div class="user-name-container">
+            <h3>Samuel Green</h3>
+            <p>Available to Walk</p>
+          </div>
+          <button class="more-action-btn ml-auto">&#8285;</button>
+        </div>
+        <!-- message box -->
+        <div class="message-box relative flex flex-col">
+          <p class="incoming-msg">That sounds great. I’d be happy with that.</p>
+          <p class="incoming-msg">Could you send over some pictures of your dog, please?</p>
+          <p class="reply-msg img-reply flex gap-4">
+            <img src="images/dog-image-1.jpg" alt="dog" />
+            <img src="images/dog-image-2.jpg" alt="dog" />
+            <img src="images/dog-image-3.jpg" alt="dog" />
+          </p>
+          <p class="reply-msg">Here are a few pictures. She’s a happy girl!</p>
+          <p class="reply-msg">Can you make it?</p>
+          <p class="incoming-msg">
+            She looks so happy! The time we discussed works. How long shall I take her out for?
+          </p>
+          <form class="time-option-form flex flex-col">
+            <div class="form-option-container">
+              <label for="30min" class="flex items-center px-4 py-2">
+                <input type="radio" name="time-option-radio" id="30min" />
+                <span class="radio"></span>
+                <p>30 minute walk</p>
+                <h3 class="option-price ml-auto text-xl font-bold">$29</h3>
+              </label>
+            </div>
+            <div class="form-option-container">
+              <label for="1hr" class="flex items-center px-4 py-2">
+                <input type="radio" name="time-option-radio" id="1hr" />
+                <span class="radio"></span>
+                <p>1 hour walk</p>
+                <h3 class="option-price ml-auto font-bold">$49</h3>
+              </label>
+            </div>
+          </form>
+        </div>
+        <!-- phone bottom text input -->
+        <form class="message-input-form">
+          <label for="message-input">
+            <input
+              type="text"
+              name="message-input"
+              id="message-input"
+              placeholder="Type a message…"
+            />
+          </label>
+          <button type="submit">&#62;</button>
+        </form>
+      </div>
+      <!-- end phone illustration -->
+
+      <section class="text-section mx-auto text-white">
+        <h1>Simple booking</h1>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This makes it easy to
+          discuss arrangements and make bookings. Once the walk has been completed you can rate your
+          walker and book again all through the chat.
+        </p>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a
+          rel="noopener noreferrer"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Dmitriy</a>
+      </div>
+    </footer>
+  </body>
+</html>

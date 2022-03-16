@@ -1,0 +1,244 @@
+body {
+  text-align: center;
+}
+main {
+  padding-top: 6rem;
+  background-color: hsl(270, 20%, 96%);
+  width: 100%;
+}
+.bg-shape {
+  background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  position: absolute;
+  z-index: 0;
+  border-radius: 0 0 77% 0%;
+  height: 88rem;
+  width: 45vw;
+  left: 0px;
+  top: -39rem;
+}
+
+/* app top */
+.app-top {
+  background: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  border-radius: 35px 35px 3px 3px;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 2.1rem;
+}
+.app-top p {
+  padding: 0;
+  color: hsl(0deg 0% 100% / 67%);
+  font-size: 0.6rem;
+}
+.app-top h3 {
+  font-weight: 700;
+  font-size: 0.8rem;
+  opacity: 0.97;
+}
+.user-profile {
+  border-radius: 50%;
+  outline: 2px solid white;
+  cursor: pointer;
+  width: 2.5rem;
+}
+/* app top btns */
+.return {
+  font-size: 1.7rem;
+  font-family: monospace;
+}
+.more-action-btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0 0.5rem;
+}
+/* app top notch */
+.app-top:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 9.5rem;
+  height: 1.4rem;
+  border-radius: 0 0 19px 19px;
+  top: 0px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 5;
+}
+/* app main */
+.illustration {
+  margin-bottom: 4rem;
+  background-color: hsl(270, 20%, 96%);
+  box-shadow: 0 20px 20px 0px rgb(0 0 0 / 10%);
+  border-radius: 52px;
+  border: 13px solid white;
+  z-index: 5;
+  position: relative;
+  width: calc(100% - 2rem);
+  max-width: 20rem;
+}
+.illustration p {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  font-weight: 500;
+  text-align: left;
+  font-size: 0.6rem;
+}
+/* message box */
+.message-box {
+  gap: 0.5rem;
+  padding-bottom: 0;
+  padding: 0.8rem;
+}
+.incoming-msg {
+  max-width: 8rem;
+  left: 0;
+  background-color: hsl(278deg 86% 94% / 60%);
+  color: hsl(276, 55%, 52%);
+  border-radius: 8px 8px 8px 3px;
+}
+.reply-msg {
+  max-width: 8rem;
+  right: 0;
+  background-color: white;
+  color: hsl(271, 15%, 43%);
+  margin-left: auto;
+  border-radius: 8px 8px 3px 8px;
+}
+img {
+  display: block;
+}
+.img-reply {
+  max-width: none;
+}
+.img-reply img {
+  width: 41px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* time option */
+.time-option-form {
+  gap: 0.5rem;
+}
+.form-option-container {
+  background: linear-gradient(45deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  color: white;
+  border-radius: 9px 11px 11px 6px;
+  max-width: 11rem;
+}
+input[type="radio"] {
+  display: none;
+}
+.form-option-container span {
+  width: 18px;
+  border-radius: 50%;
+  height: 18px;
+  display: inline-block;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.712);
+  cursor: pointer;
+}
+input[type="radio"]:checked + span {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.712);
+  outline: 2px solid hsla(301, 80%, 35%, 0.522);
+  outline-offset: -3px;
+}
+input[type="radio"]:checked + span:after {
+  position: absolute;
+  content: "";
+  background-color: hsla(301, 80%, 35%, 0.522);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 4px;
+  height: 4px;
+}
+.option-price {
+  font-size: 1rem;
+}
+/* app bottom text input */
+.message-input-form {
+  padding: 1rem;
+  width: 100%;
+  position: relative;
+}
+.message-input-form input {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 25px;
+}
+.message-input-form button {
+  background-color: hsl(271, 36%, 24%);
+  color: white;
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.5rem;
+  padding-top: 0.4rem;
+  border-radius: 50%;
+  height: 1.6rem;
+  width: 1.6rem;
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 0;
+  font-family: monospace;
+}
+input::placeholder {
+  color: hsl(206, 6%, 79%);
+  font-size: 0.8rem;
+}
+/* text section */
+.text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  padding-bottom: 3rem;
+  width: auto;
+  max-width: 40rem;
+}
+.text-section h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: hsl(271, 36%, 24%);
+}
+.text-section p {
+  font-size: 1rem;
+  color: hsl(270, 7%, 64%);
+  max-width: 18rem;
+  margin: 0 auto;
+}
+/* footer */
+.attribution {
+  margin-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* hover */
+@media (hover) {
+  input[type="radio"] + span:hover {
+    background-color: rgba(255, 255, 255, 0.351);
+  }
+  input[type="radio"]:checked + span:hover {
+    background-color: rgba(255, 255, 255, 0.712);
+  }
+  .message-input-form button:hover {
+    opacity: 0.8;
+  }
+  .more-action-btn:hover {
+    background: rgba(255, 255, 255, 0.19);
+  }
+  .return:hover {
+    background: rgba(255, 255, 255, 0.19);
+  }
+}
