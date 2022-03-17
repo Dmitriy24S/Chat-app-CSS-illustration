@@ -12,6 +12,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Chat app illustration</title>
   </head>
   <body>
@@ -47,7 +49,7 @@
           </p>
           <form class="time-option-form flex flex-col">
             <div class="form-option-container">
-              <label for="30min" class="flex items-center px-4 py-2">
+              <label for="30min" class="flex items-center px-4 py-1.5">
                 <input type="radio" name="time-option-radio" id="30min" />
                 <span class="radio"></span>
                 <p>30 minute walk</p>
@@ -55,7 +57,7 @@
               </label>
             </div>
             <div class="form-option-container">
-              <label for="1hr" class="flex items-center px-4 py-2">
+              <label for="1hr" class="flex items-center px-4 py-1.5">
                 <input type="radio" name="time-option-radio" id="1hr" />
                 <span class="radio"></span>
                 <p>1 hour walk</p>
@@ -72,6 +74,7 @@
               name="message-input"
               id="message-input"
               placeholder="Type a message…"
+              autocomplete="off"
             />
           </label>
           <button type="submit">&#62;</button>
