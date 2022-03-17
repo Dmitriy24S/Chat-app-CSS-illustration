@@ -6,4 +6,4 @@
 
 Chat app CSS illustration. Created with HTML, CSS and Tailwind CSS.
 
-[Live Demo](https://dmitriy24s.github.io/Chat-app-CSS-illustration/) 👈
+[Live Demo](https://dmitriy24s.github.io/chat-app-css-illustration/) 👈
