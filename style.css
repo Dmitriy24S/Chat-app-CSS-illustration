@@ -126,6 +126,9 @@ img {
 /* time option */
 .time-option-form {
   gap: 0.5rem;
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
 }
 .form-option-container {
   background: linear-gradient(45deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
